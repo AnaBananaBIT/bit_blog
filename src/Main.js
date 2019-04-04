@@ -12,7 +12,7 @@ const Main = () => {
             <Route path='/authors' component={Authors} />
             <Route path='/about' component={About} />
             <Route path='/singleauthors' component={SingleAuthor} />
-            <Route path='/postdetail' component={PostDetail} />
+            <Route path='/postdetail/:id' component={PostDetail} />
             <Route path='/' component={Home} />
         </Switch>
 
