@@ -1,0 +1,44 @@
+.page-footer {
+    background: #ADD8E6;
+}
+
+.nav-wrapper {
+    background: #ADD8E6;
+
+}
+.brand-logo {
+    margin-left: 20px;
+}
+h4 {
+    color: 	#20B2AA;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.collection {
+    height: 100%;
+    color: 	#20B2AA;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+p {
+    margin-left: 30px;
+}
+h5 {
+    margin-left: 30px;
+}
+h2 {
+    margin-left: 30px;
+}
+h6 {
+    margin-left:30px;
+}
+
+.name h4 {
+    margin-left: -600px;
+}
+
+.name {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
