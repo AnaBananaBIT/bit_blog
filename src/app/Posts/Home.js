@@ -30,7 +30,7 @@ class Home extends Component {
 
                 {posts.slice(0, 7).map(post => (
                     <div>
-                        <h5><Link to="/postdetail">{post.id} {post.title} </Link></h5>
+                        <h5><Link to={`/postdetail/${post.id}`}>{post.id} {post.title} </Link></h5>
                         <p>{post.body}</p>
 
                     </div>

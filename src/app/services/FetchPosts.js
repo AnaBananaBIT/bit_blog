@@ -1,4 +1,4 @@
-import * as shared from '../shared/ApiAddress'
+import * as shared from '../shared/Posts'
 import Post from './../entities/Post'
 
 const url = `${shared.BASE_API_URL}/posts`;
@@ -9,7 +9,6 @@ const FetchPosts = () => (
             return res.json()
         })
         .then((apiPosts) => {
-
             const allPosts = apiPosts.map((apiPost) => (
                 new Post(
                     apiPost.userId,
@@ -20,7 +19,7 @@ const FetchPosts = () => (
 
                 )
             ))
-            console.log(allPosts)
+
             return allPosts
         })
 )
@@ -28,14 +27,15 @@ const FetchPosts = () => (
 
 
 
-const FetchPost = () => {
-    fetch(url)
+const FetchPost = (postId) => {
+    return fetch(url + "/" + postId)
         .then((res) => {
-            console.log(res)
             return res.json()
-        }
-
-        )
+        })
+        .then((posts) => {
+            console.log(posts)
+            return posts
+        })
 }
 
 export {
